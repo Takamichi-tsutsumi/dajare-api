@@ -5,6 +5,11 @@ class User(models.Model):
     name = models.CharField(max_length=32)
     email = models.EmailField()
 
+    def __repr__(self):
+        return "{}: {}".format(self.pk, self.name)
+
+    __str__ = __repr__
+
 
 class Entry(models.Model):
     STATUS_DRAFT = "draft"
