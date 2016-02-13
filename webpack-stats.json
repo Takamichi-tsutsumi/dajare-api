@@ -1,1 +1,1 @@
-{"status":"done","chunks":{"main":[{"name":"bundle.js","path":"/vagrant/dajare_api/static/bundles/js/bundle.js"}]}}
+{"status":"done","chunks":{"main":[{"name":"bundle.js","publicPath":"http://localhost:3000/static/bundles/bundle.js","path":"/vagrant/dajare_api/static/bundles/bundle.js"}]},"publicPath":"http://localhost:3000/static/bundles/"}

@@ -4,14 +4,19 @@ var BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
   entry: [
-    './static/assets/js/index.js'
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    './static/assets/js/index.js',
   ],
   output: {
-    path: path.resolve('./static/bundles/js/'),
-    filename: 'bundle.js'
+    path: path.resolve('./static/bundles/'),
+    filename: 'bundle.js',
+    publicPath: 'http://localhost:3000/static/bundles/'
   },
   plugins: [
-    new BundleTracker({filename: './webpack-stats.json'})
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
+    new BundleTracker({filename: './webpack-stats.json'}),
   ],
   module: {
     loaders: [{
