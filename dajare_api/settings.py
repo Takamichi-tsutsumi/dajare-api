@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
-    'blog',
+    'dajare_api.apps.blog',
     'rest_framework',
+    'dajare_api.apps.client',
 ]
 
 MIDDLEWARE_CLASSES = [

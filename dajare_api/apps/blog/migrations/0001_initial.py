@@ -36,6 +36,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='entry',
             name='author',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='entries', to='blog.User'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='entries', to='dajare_api.apps.blog.User'),
         ),
     ]

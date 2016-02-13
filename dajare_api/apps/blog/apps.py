@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class BlogConfig(AppConfig):
-    name = 'blog'
+    name = 'dajare_api.apps.blog'
