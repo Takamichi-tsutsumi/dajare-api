@@ -7,7 +7,7 @@ module.exports = {
     './static/assets/js/index.js'
   ],
   output: {
-    path: path.resolve('./static/js/'),
+    path: path.resolve('./static/bundles/js/'),
     filename: 'bundle.js'
   },
   plugins: [

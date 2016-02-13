@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     {% load staticfiles %}
+    {% load render_bundle from webpack_loader %}
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div class="container"></div>
-<script src="{% static 'js/bundle.js' %}"></script>
+{% render_bundle 'main' %}
+{#<script src="{% static 'bundles/js/bundle.js' %}"></script>#}
 
 </body>
 </html>
