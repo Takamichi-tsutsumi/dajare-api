@@ -4,7 +4,7 @@
 
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config')
+var config = require('./webpack.config');
 
 new WebpackDevServer(webpack(config), {
     publicPath: config.output.publicPath,
@@ -17,4 +17,4 @@ new WebpackDevServer(webpack(config), {
     }
 
     console.log('Listening at 0.0.0.0:3000')
-})
+});
